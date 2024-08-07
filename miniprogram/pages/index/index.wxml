@@ -1,0 +1,32 @@
+<navigation-bar title="智能门禁系统"></navigation-bar>
+
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!logged}}" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">登录</button>
+    <view wx:if="{{logged}}">
+      <text>欢迎, {{userInfo.nickName}}</text>
+    </view>
+  </view>
+
+  <view wx:if="{{logged}}">
+    <view>
+      <input type="number" placeholder="请输入临时密码" bindinput="onPasswordInput"/>
+      <picker mode="time" value="12:00" start="00:00" end="23:59" bindchange="onTimeChange">
+        <view class="picker">
+          当前选择: {{timeLimit}}
+        </view>
+      </picker>
+      <button bindtap="setTemporaryPassword">设置临时密码</button>
+    </view>
+
+    <view>
+      <button bindtap="viewCurrentPassword">查看当前有效临时密码</button>
+      <text>{{currentPassword}}</text>
+    </view>
+
+    <view>
+      <button bindtap="generateDeviceCode">生成门禁设备绑定号</button>
+      <text>{{deviceCode}}</text>
+    </view>
+  </view>
+</view>

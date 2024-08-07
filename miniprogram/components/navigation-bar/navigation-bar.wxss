@@ -1,0 +1,11 @@
+.navigation-bar {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}

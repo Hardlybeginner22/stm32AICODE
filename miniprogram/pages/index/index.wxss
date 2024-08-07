@@ -1,0 +1,11 @@
+.container {
+  padding: 20px;
+}
+
+.userinfo {
+  margin-bottom: 20px;
+}
+
+.picker {
+  margin: 20px 0;
+}

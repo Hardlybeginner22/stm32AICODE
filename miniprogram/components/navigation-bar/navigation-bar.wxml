@@ -1,0 +1,3 @@
+<view class="navigation-bar">
+  <text class="title">{{title}}</text>
+</view>

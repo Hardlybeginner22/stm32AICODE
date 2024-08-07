@@ -1,0 +1,13 @@
+/* 全局样式 */
+page {
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 20px;
+}
+
+button {
+  margin-top: 10px;
+}
